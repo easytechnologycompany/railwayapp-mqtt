@@ -1,0 +1,21 @@
+version: '3.6'
+
+services:
+  mqtt:
+    image: eclipse-mosquitto:latest
+    container_name: mqtt
+    restart: unless-stopped
+    user: "${UID}:${GID}"
+    environment:
+      - TZ=Europe/Amsterdam
+      - MQTT_USER=UVE22meTGCoeQXmeoCN5LiTT
+      - MQTT_PASS=KTcWhY2shYvTL9S6hPtWfwdA
+      - PUID=${UID}
+      - PGID=${GID}
+    ports:
+      - 1883:1883
+      - 8883:8883
+      - 9001:9001
+    volumes:
+      #  - ./data/mqtt/data:/mosquitto/data
+      - ./config/mqtt/mosquitto.conf:/mosquitto/config/mosquitto.conf
