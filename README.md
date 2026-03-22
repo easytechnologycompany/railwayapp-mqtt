@@ -7,8 +7,9 @@ Deploy MQTT on railway.app with a single click.
 ## ✨ Features
 
 * MQTT with automated setup
-* Password Authentication (Set username & password in environment variables)
+* Optional password authentication via `MQTT_USER` and `MQTT_PASS`
 * Timezone Support (Set timezone in environment variables)
+* Railway config as code via `railway.toml`
 
 ## 🐍 How to Deploy
 
@@ -20,6 +21,13 @@ Deploy MQTT on railway.app with a single click.
     MQTT_PASS=yourpassword
     PORT=1883 # Don't change this
 ```
+
+## Production recommendations (Railway)
+
+* Set both `MQTT_USER` and `MQTT_PASS` to enable authenticated access
+* If one of them is missing, broker starts in anonymous mode
+* Use persistent storage for `/mosquitto/data`
+* Keep external TCP port mapped to `1883`
 
 2. Wait for Build & Deployment to Finish
 3. Open the custom URL an enter your credentials
