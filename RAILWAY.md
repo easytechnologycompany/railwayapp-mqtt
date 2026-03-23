@@ -1,5 +1,7 @@
 # Deploy and Host Mosquitto MQTT on Railway
 
+![Eclipse Mosquitto logo](https://mosquitto.org/images/mosquitto-text-side-28.png)
+
 **What is Mosquitto MQTT?** [Eclipse Mosquitto](https://mosquitto.org/) is a lightweight open-source message broker that implements the MQTT protocol. Publishers send messages to named topics; subscribers receive them in real time. It is widely used for IoT, telemetry, and event-driven backends where many clients need reliable, low-overhead messaging over TCP.
 
 ## About Hosting Mosquitto MQTT
