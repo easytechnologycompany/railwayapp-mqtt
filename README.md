@@ -39,3 +39,6 @@ docker compose up -d
 ```
 
 Connect to http://localhost:1883 use setup username & password from docker-compose file to login to MQTT.
+
+<!-- footer -->
+[![Mosquitto MQTT](https://img.shields.io/badge/Mosquitto%20MQTT-3C5280?style=for-the-badge&logo=eclipsemosquitto&logoColor=white)](https://github.com/vergissberlin/railwayapp-mqtt)
