@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vergissberlin/railway/main/docs/railway-template.schema.json",
+  "schemaVersion": 1,
+  "project": "railwayapp-mqtt",
+  "repo": "vergissberlin/railwayapp-mqtt",
+  "displayName": "MQTT",
+  "publishedCode": "mqtt",
+  "image": "https://raw.githubusercontent.com/vergissberlin/railwayapp-mqtt/main/template-header.svg",
+  "description": "Deploy MQTT Mosquitto broker on Railway with secure authentication options.",
+  "workspaceAutomation": false
+}
