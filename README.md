@@ -2,7 +2,7 @@
 
 Deploy MQTT on railway.app with a single click.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/C09s2G?referralCode=2_sIT9)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/C09s2G?referralCode=2_sIT9&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 ## ✨ Features
 
