@@ -30,6 +30,7 @@ Deploy MQTT on railway.app with a single click.
 * Set both `MQTT_USER` and `MQTT_PASS` to enable authenticated access
 * If one of them is missing, broker starts in anonymous mode
 * Use persistent storage for `/mosquitto/data`
+* This data mount is enforced via `requiredMountPath` in `railway.toml`
 * Keep external TCP port mapped to `1883`
 
 2. Wait for Build & Deployment to Finish
