@@ -12,6 +12,7 @@ ensure_line() {
 }
 
 if [ -n "${MQTT_USER:-}" ] && [ -n "${MQTT_PASS:-}" ]; then
+    rm -f "$PASSWORD_FILE"
     mosquitto_passwd -b -c "$PASSWORD_FILE" "$MQTT_USER" "$MQTT_PASS"
     ensure_line "allow_anonymous false"
     ensure_line "password_file ${PASSWORD_FILE}"
